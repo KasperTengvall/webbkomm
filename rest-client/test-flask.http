@@ -1,10 +1,10 @@
 @apiURL = https://vm2208.kaj.pouta.csc.fi:8422
 
-GET {{apiURL}}/rooms
+GET {{apiURL}}/test
 
 ###
 
-POST {{apiURL}}/rooms
+POST {{apiURL}}/test
 Content-Type: application/json
 
 {
