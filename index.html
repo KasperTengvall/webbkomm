@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello flask</title>
+</head>
+<body>
+
+    <h2>Response from API: <span id="resp"></span></h2>
+
+
+    
+    <script>
+        async function getAPI() {
+            const resp = await fetch('https://vm2208.kaj.pouta.csc.fi:8422/')
+
+            const respData = await resp.json();
+            
+            console.log(respData);
+            document.querySelector('#resp').innerHTML = respData.ip;
+        }
+        getAPI();
+
+    </script>
+</body>
+</html>
