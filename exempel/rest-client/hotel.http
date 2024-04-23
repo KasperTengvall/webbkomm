@@ -1,6 +1,15 @@
 @apiURL = https://vm2208.kaj.pouta.csc.fi:8423
 
+GET {{apiURL}}/test
+
+###
+
 GET {{apiURL}}/rooms
+
+###
+
+GET {{apiURL}}/rooms/2
+
 
 ### POST skapa nytt rum
 POST {{apiURL}}/rooms
